@@ -1,3 +1,5 @@
+"use client";
+
 import Stage from "@/components/Stage";
 import dynamic from "next/dynamic";
 
