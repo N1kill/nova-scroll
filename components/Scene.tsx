@@ -79,7 +79,7 @@ export default function Scene() {
     <div aria-hidden className="h-full w-full">
       <Canvas
         dpr={[1, 1.5]}
-        frameloop="demand"
+        frameloop="always"
         camera={{ position: [0, 1.2, 7], fov: 35 }}
         gl={{ alpha: true, antialias: true }}
       >

@@ -1,5 +1,9 @@
 import Stage from "@/components/Stage";
-import ScrollDriver from "@/components/ScrollDriver";
+import dynamic from "next/dynamic";
+
+const ScrollDriver = dynamic(() => import("@/components/ScrollDriver"), {
+  ssr: false,
+});
 
 const chapters = [
   ["NOVA", "Daily gel cleanser. Scroll to take it apart."],

@@ -2,7 +2,6 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { invalidate } from "@react-three/fiber";
 import { scroll } from "@/lib/scroll";
 
 export default function ScrollDriver() {
@@ -18,7 +17,6 @@ export default function ScrollDriver() {
         const el = document.documentElement;
         el.style.setProperty("--bg", gsap.utils.interpolate("#CFE0D2", "#4A2545", t));
         el.style.setProperty("--ink", t > 0.5 ? "#F7F6F2" : "#1E1A20");
-        invalidate();
       },
     });
     const refresh = () => ScrollTrigger.refresh();
