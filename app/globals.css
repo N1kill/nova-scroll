@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #CFE0D2;
+  --ink: #1E1A20;
+}
+
+html, body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  transition: background-color .2s linear, color .2s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html, body {
+    transition: none;
+  }
+}
